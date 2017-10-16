@@ -1,3 +1,4 @@
+
 # ExtReact Conference App
 
 An example app built with [ExtReact](http://docs.sencha.com/extreact/latest/index.html), Redux, and React-Router.
@@ -10,12 +11,15 @@ Once you have received your credentials, you can authenticate by running the fol
 ```
 npm login --registry=http://npm.sencha.com --scope=@extjs
 ```
+for now use:
+username: mmchast88..gmail.com
+password: FdmU6N3jTH
+email: mmchast88@gmail.com
 
 Then, run the following to build and launch the app:
 
 ```
 git clone https://github.com/sencha/extjs-reactor.git
-cd packages/reactor-conference-app
 npm install
 npm start
 ```

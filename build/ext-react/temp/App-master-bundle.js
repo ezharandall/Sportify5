@@ -1,2 +1,2 @@
 // @tag App
-// @require C:\Users\ezhar\gw\Sportify4\reactor-conference-app\build\ext-react\app.js
+// @require C:\Users\ezhar\gw\Sportify5\build\ext-react\app.js
