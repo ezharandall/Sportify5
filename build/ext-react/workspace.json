@@ -1,0 +1,9 @@
+{
+    "frameworks": {
+        "ext": "..\\..\\node_modules\\@extjs\\ext-react"
+    },
+    "packages": {
+        "dir": "${workspace.dir}/packages/local,${workspace.dir}/packages,C:\\Users\\ezhar\\gw\\Sportify4\\reactor-conference-app\\node_modules\\@extjs,ext-react\\packages",
+        "extract": "${workspace.dir}/packages/remote"
+    }
+}
