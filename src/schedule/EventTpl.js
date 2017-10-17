@@ -8,7 +8,7 @@ export function createTpl({ getQuery, showTime=true, onFavoriteClick }) {
             return query ? highlight(query, text) : { __html: text};
         }
 
-        const day = data.date && data.date.match(/(Monday|Tuesday|Wednesday)/)[1];
+        const day = data.date && data.date.match(/(Sunday|Monday|Tuesday|Wednesday|Thursday|Friday|Saturday)/)[1];
 
         return (
             <div className="app-list-content">

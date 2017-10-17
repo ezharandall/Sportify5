@@ -66,10 +66,10 @@ class Calendar extends Component {
                 }}
             >
                 <Calendar_Days
-                    visibleDays={3}
+                    visibleDays={7}
                     startTime={7}
                     endTime={22}
-                    value={new Date(2016, 10, 7)}
+                    value={new Date(2017, 10, 16)}
                     store={this.store}
                     dayHeader={{
                         format: 'D',

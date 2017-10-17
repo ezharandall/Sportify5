@@ -10,7 +10,7 @@ class Event extends Component {
     render() {
         const { record, header=true, ...props } = this.props;
         const data = record && record.data;
-        const day = data && data.date && data.date.match(/(Monday|Tuesday|Wednesday)/)[1];
+        const day = data && data.date && data.date.match(/(Sunday|Monday|Tuesday|Wednesday|Thursday|Friday|Saturday)/)[1];
         const speaker = data && data.speakers && data.speakers.length > 0 && data.speakers.map(s => s.name).join(', ');
 
         return (

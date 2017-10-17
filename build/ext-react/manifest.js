@@ -46,6 +46,12 @@ Ext.create({"xtype":"titlebar"});
 Ext.create({"xtype":"panel"});
 Ext.create({"xtype":"panel"});
 Ext.create({"xtype":"tabbar"});
+Ext.create({"xtype":"panel"});
+Ext.create({"xtype":"panel"});
+Ext.create({"xtype":"tabbar"});
+Ext.create({"xtype":"panel"});
+Ext.create({"xtype":"panel"});
+Ext.create({"xtype":"tabbar"});
 Ext.create({
   xtype: 'container',
   layout: 'fit',
@@ -376,6 +382,168 @@ Ext.create({
 Ext.create({"xtype":"calendar-days"});
 Ext.create({"xtype":"container"});
 Ext.create({"xtype":"panel"});
+Ext.create('Ext.calendar.store.Calendars', {
+  eventStoreDefaults: {
+    proxy: {
+      type: 'ajax',
+      url: 'resources/schedule.json'
+    },
+    filters: function filters(item) {
+      return _this.favorites.indexOf(item.get('id')) >= 0;
+    }
+  },
+  data: [{
+    id: 1,
+    name: 'myCal'
+  }]
+});
+Ext.create({
+  xtype: 'container',
+  activeItem: match.params.id && event ? 1 : 0,
+  platformConfig: {
+    "!phone": {
+      layout: 'hbox'
+    },
+    "phone": {
+      layout: {
+        type: 'card',
+        animation: 'slide'
+      }
+    }
+  }
+});
+Ext.create({
+  xtype: 'calendar-days',
+  visibleDays: 7,
+  startTime: 7,
+  endTime: 22,
+  value: new Date(2016, 10, 7),
+  store: this.store,
+  dayHeader: {
+    format: 'D',
+    compactOptions: {
+      format: 'D'
+    }
+  },
+  editForm: null,
+  draggable: false,
+  resizeEvents: false,
+  gestureNavigation: false,
+  allowSelection: false,
+  onEventTap: this.eventTap,
+  flex: 1
+});
+Ext.create({"xtype":"calendar-days"});
+Ext.create({"xtype":"container"});
+Ext.create({"xtype":"panel"});
+Ext.create('Ext.calendar.store.Calendars', {
+  eventStoreDefaults: {
+    proxy: {
+      type: 'ajax',
+      url: 'resources/schedule.json'
+    },
+    filters: function filters(item) {
+      return _this.favorites.indexOf(item.get('id')) >= 0;
+    }
+  },
+  data: [{
+    id: 1,
+    name: 'myCal'
+  }]
+});
+Ext.create({
+  xtype: 'container',
+  activeItem: match.params.id && event ? 1 : 0,
+  platformConfig: {
+    "!phone": {
+      layout: 'hbox'
+    },
+    "phone": {
+      layout: {
+        type: 'card',
+        animation: 'slide'
+      }
+    }
+  }
+});
+Ext.create({
+  xtype: 'calendar-days',
+  visibleDays: 7,
+  startTime: 7,
+  endTime: 22,
+  value: new Date(2017, 10, 16),
+  store: this.store,
+  dayHeader: {
+    format: 'D',
+    compactOptions: {
+      format: 'D'
+    }
+  },
+  editForm: null,
+  draggable: false,
+  resizeEvents: false,
+  gestureNavigation: false,
+  allowSelection: false,
+  onEventTap: this.eventTap,
+  flex: 1
+});
+Ext.create({"xtype":"calendar-days"});
+Ext.create({"xtype":"container"});
+Ext.create({"xtype":"panel"});
+Ext.create('Ext.calendar.store.Calendars', {
+  eventStoreDefaults: {
+    proxy: {
+      type: 'ajax',
+      url: 'resources/schedule.json'
+    },
+    filters: function filters(item) {
+      return _this.favorites.indexOf(item.get('id')) >= 0;
+    }
+  },
+  data: [{
+    id: 1,
+    name: 'myCal'
+  }]
+});
+Ext.create({
+  xtype: 'container',
+  activeItem: match.params.id && event ? 1 : 0,
+  platformConfig: {
+    "!phone": {
+      layout: 'hbox'
+    },
+    "phone": {
+      layout: {
+        type: 'card',
+        animation: 'slide'
+      }
+    }
+  }
+});
+Ext.create({
+  xtype: 'calendar-days',
+  visibleDays: 7,
+  startTime: 7,
+  endTime: 22,
+  value: new Date(2017, 10, 16),
+  store: this.store,
+  dayHeader: {
+    format: 'D',
+    compactOptions: {
+      format: 'D'
+    }
+  },
+  editForm: null,
+  draggable: false,
+  resizeEvents: false,
+  gestureNavigation: false,
+  allowSelection: false,
+  onEventTap: this.eventTap,
+  flex: 1
+});
+Ext.create({"xtype":"calendar-days"});
+Ext.create({"xtype":"container"});
+Ext.create({"xtype":"panel"});
 Ext.create('Ext.data.TreeStore', {
   root: {
     children: [{
@@ -406,6 +574,78 @@ Ext.create('Ext.data.TreeStore', {
     }]
   }
 });
+Ext.create('Ext.data.ChainedStore');
+Ext.create('Ext.data.ChainedStore', _extends({}, _this.storeDefaults, {
+  filters: [{
+    property: 'date',
+    value: 'Monday, November 7'
+  }]
+}));
+Ext.create('Ext.data.ChainedStore', _extends({}, _this.storeDefaults, {
+  filters: [{
+    property: 'date',
+    value: 'Tuesday, November 8'
+  }]
+}));
+Ext.create('Ext.data.ChainedStore', _extends({}, _this.storeDefaults, {
+  filters: [{
+    property: 'date',
+    value: 'Wednesday, November 9'
+  }]
+}));
+Ext.create('Ext.data.ChainedStore', _extends({}, _this.storeDefaults, {
+  filters: [{
+    property: 'favorite',
+    value: true
+  }],
+  grouper: {
+    groupFn: function groupFn(item) {
+      return item.get('date') + ', ' + item.get('start_time');
+    },
+    sortProperty: 'startDate'
+  }
+}));
+Ext.create({
+  xtype: 'container',
+  docked: 'top',
+  className: 'app-banner'
+});
+Ext.create({
+  xtype: 'container',
+  activeItem: showEvent ? 1 : 0,
+  platformConfig: {
+    "!phone": {
+      layout: 'hbox'
+    },
+    "phone": {
+      layout: {
+        type: 'card',
+        animation: 'slide'
+      }
+    }
+  }
+});
+Ext.create({
+  xtype: 'tabpanel',
+  flex: 1,
+  tabBar: {
+    shadow: true
+  },
+  maxWidth: showEvent && 500,
+  activeItem: this.state.activeItem,
+  platformConfig: {
+    "!phone": {
+      flex: 1
+    }
+  }
+});
+Ext.create({"xtype":"container"});
+Ext.create({"xtype":"button"});
+Ext.create({"xtype":"tabpanel"});
+Ext.create({"xtype":"panel"});
+Ext.create({"xtype":"toolbar"});
+Ext.create({"xtype":"searchfield"});
+Ext.create({"xtype":"list"});
 Ext.create('Ext.data.ChainedStore');
 Ext.create('Ext.data.ChainedStore', _extends({}, _this.storeDefaults, {
   filters: [{

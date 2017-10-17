@@ -2,11 +2,11 @@
   {
     "id": 158,
     "avatar_url": "resources/avatars/01.jpg",
-    "name": "Alice Simmons",
-    "title": "Developer",
-    "company": "Cyber Purchasing",
-    "bio": "Alice has more than 8 years of programming experience, and she has written two JavaScript programming textbooks. She speaks at technology conferences and runs a JavaScript meetup group.",
-    "sessions": ["57b78648a1663"]
+    "name": "Jacob Randall",
+    "title": "Shooting Guard",
+    "company": "DC Blue Devils",
+    "bio": "Jacob has been playing basketball since he was 4 years old. He started kindergarden early, so he's 10 years old even though he's in the 6th grade.",
+    "sessions" : ["57b78648a1663"]
   },
   {
     "id": 195,

@@ -120,6 +120,12 @@ class Schedule extends Component {
                 >
                     { Ext.os.is.Phone && banner }
                     <ScheduleList
+                        title={Ext.os.is.Phone ? "SUN" : 'SUNDAY'}
+                        event={event}
+                        dataStore={this.stores[0]}
+                        pinHeaders
+                    />
+                    <ScheduleList
                         title={Ext.os.is.Phone ? "MON" : 'MONDAY'}
                         event={event}
                         dataStore={this.stores[0]}
@@ -135,6 +141,24 @@ class Schedule extends Component {
                         title={Ext.os.is.Phone ? "WED" : 'WEDNESDAY'}
                         event={event}
                         dataStore={this.stores[2]}
+                        pinHeaders
+                    />
+                    <ScheduleList
+                        title={Ext.os.is.Phone ? "THU" : 'THURSDAY'}
+                        event={event}
+                        dataStore={this.stores[0]}
+                        pinHeaders
+                    />
+                    <ScheduleList
+                        title={Ext.os.is.Phone ? "FRI" : 'FRIDAY'}
+                        event={event}
+                        dataStore={this.stores[0]}
+                        pinHeaders
+                    />
+                    <ScheduleList
+                        title={Ext.os.is.Phone ? "SAT" : 'SATURDAY'}
+                        event={event}
+                        dataStore={this.stores[0]}
                         pinHeaders
                     />
                     <ScheduleList
