@@ -19,7 +19,7 @@ email: mmchast88@gmail.com
 Then, run the following to build and launch the app:
 
 ```
-git clone https://github.com/sencha/extjs-reactor.git
+git clone https://github.com/ezharandall/Sportify5.git
 npm install
 npm start
 ```
