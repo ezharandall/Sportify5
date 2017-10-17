@@ -25,3 +25,20 @@ npm start
 ```
 
 You can view the app by pointing your browser to [http://localhost:8085](http://localhost:8085)
+...
+
+To create the Express sever:
+$ npm install -g express-generator
+
+Then run it to create the Express App:
+$ express react-backend
+
+It’ll create a react-backend folder. Then make sure to install the dependencies:
+$ cd react-backend
+$ npm install   # or yarn
+
+Start up the app by running this:
+$ PORT=3005 node bin/www
+
+
+
