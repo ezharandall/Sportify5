@@ -1,38 +1,38 @@
 [
   {
     "id": 158,
+    "avatar_url": "resources/avatars/coachSamuels.JPG",
+    "name": "Quanzi Samuels",
+    "title": "Head Coach",
+    "company": "DC Blue Devils",
+    "bio": "Coach Samuels is a father of 7, and is actively engaged in the community with assisting youths in their basketball endeavors.",
+    "sessions" : ["57b78648a1663"]
+  },
+  {
+    "id": 195,
+    "avatar_url": "resources/avatars/aCoachHenry.JPG",
+    "name": "Henry",
+    "title": "Assistant Coach",
+    "company": "DC Blue Devils",
+    "bio": "Assistant Coach Henry loves basketball lol.",
+    "sessions": "none"
+  },
+  {
+    "id": 259,
+    "avatar_url": "resources/avatars/03.jpg",
+    "name": "Shanda Samuels",
+    "title": "Team Manager",
+    "company": "DC Blue Devils",
+    "bio": "Shanda Samuels is a public servant in the community. She's a 5th grade teacher at PGCPS, and is also a mother of 7. She's a tremendous asset to the DC Blue Devils Family.",
+    "sessions": ["57ee3b239aa2d"]
+  },
+  {
+    "id": 258,
     "avatar_url": "resources/avatars/ben_ash.JPG",
     "name": "Ben Ash",
     "title": "Point Guard",
     "company": "DC Blue Devils",
     "bio": "Ben plays travel basketball and soccer. He aspires to be like his great grandfather who was college player of the year and played in the NBA for many years.",
-    "sessions" : ["57b78648a1663"]
-  },
-  {
-    "id": 195,
-    "avatar_url": "resources/avatars/02.jpg",
-    "name": "Stephanie Gomez",
-    "title": "UX Designer",
-    "company": "Saucy",
-    "bio": "Stephanie is a UX Designer at Saucy, where she leads the product design team. She holds a Bachelor of Fine Arts in Design from College of Oregon.",
-    "sessions": ["57b77c1067ce8"]
-  },
-  {
-    "id": 259,
-    "avatar_url": "resources/avatars/03.jpg",
-    "name": "Benjamin Banks",
-    "title": "CEO",
-    "company": "Saucy",
-    "bio": "Benjamin has operational expertise in sales, marketing, and product development. Benjamins has a Bachelor of Science Degree in Business Administration from the Georgia University.",
-    "sessions": ["57ee3b239aa2d"]
-  },
-  {
-    "id": 258,
-    "avatar_url": "resources/avatars/04.jpg",
-    "name": "Laura Russell",
-    "title": "Team Lead",
-    "company": "Lelandsoft",
-    "bio": "Laura has 8 years of experience in the creative software industry. She has experience in building desktop apps and low-level programming on multiple platforms using C++ and Python.",
     "sessions": ["57ee3b239aa2d"]
   },
   {
