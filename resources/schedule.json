@@ -1,21 +1,21 @@
 [
   {
     "id": "57eda8798a95e",
-    "type": "break",
-    "title": "Registration/Hospitality Desk Open",
+    "type": "Game 1",
+    "title": "Agame Tourney",
     "description": "",
     "date": "Monday, November 7",
-    "start_time": "7:00 AM",
-    "end_time": "9:00 PM",
+    "start_time": "8:00 AM",
+    "end_time": "9:00 AM",
     "location": {
         "id": 1,
-        "name": "Registration Desks between Ironwood & Juniper Ballrooms, Level 3"
+        "name": "New World 2024"
     },
     "hashtag": "",
     "order_index": 1,
-    "startDate": "2016-11-07T12:00:00.000Z",
-    "endDate": "2016-11-08T02:00:00.000Z",
-    "categoryName": "Break",
+    "startDate": "2017-11-07T12:00:00.000Z",
+    "endDate": "2017-11-08T02:00:00.000Z",
+    "categoryName": "DC Blue Devils vs",
     "speakers": "",
     "speakerNames": false
   },
@@ -33,9 +33,9 @@
     },
     "hashtag": "SaucyCon",
     "order_index": 2,
-    "startDate": "2016-11-07T12:00:00.000Z",
-    "endDate": "2016-11-07T14:00:00.000Z",
-    "categoryName": "Break",
+    "startDate": "2017-11-07T12:00:00.000Z",
+    "endDate": "2017-11-07T14:00:00.000Z",
+    "categoryName": "DC Blue Devils vs",
     "speakers": "",
     "speakerNames": false
   },
@@ -53,9 +53,9 @@
     },
     "hashtag": "SaucyCon",
     "order_index": 3,
-    "startDate": "2016-11-07T14:00:00.000Z",
-    "endDate": "2016-11-07T17:00:00.000Z",
-    "categoryName": "Training",
+    "startDate": "2017-11-07T14:00:00.000Z",
+    "endDate": "2017-11-07T17:00:00.000Z",
+    "categoryName": "DC Blue Devils vs",
     "speakers": "",
     "speakerNames": false
   },
@@ -75,7 +75,7 @@
     "order_index": 4,
     "startDate": "2016-11-07T14:00:00.000Z",
     "endDate": "2016-11-07T22:00:00.000Z",
-    "categoryName": "Training",
+    "categoryName": "DC Blue Devils vs",
     "speakers": "",
     "speakerNames": false
   },
@@ -95,7 +95,7 @@
     "order_index": 5,
     "startDate": "2016-11-07T14:00:00.000Z",
     "endDate": "2016-11-07T22:00:00.000Z",
-    "categoryName": "Training",
+    "categoryName": "DC Blue Devils vs",
     "speakers": "",
     "speakerNames": false
   },
@@ -115,7 +115,7 @@
     "order_index": 6,
     "startDate": "2016-11-07T14:00:00.000Z",
     "endDate": "2016-11-07T22:00:00.000Z",
-    "categoryName": "Training",
+    "categoryName": "Practice",
     "speakers": "",
     "speakerNames": false
   },
@@ -135,7 +135,7 @@
     "order_index": 7,
     "startDate": "2016-11-07T17:00:00.000Z",
     "endDate": "2016-11-07T18:00:00.000Z",
-    "categoryName": "Break",
+    "categoryName": "Practice",
     "speakers": "",
     "speakerNames": false
   },
@@ -155,7 +155,7 @@
     "order_index": 8,
     "startDate": "2016-11-07T18:00:00.000Z",
     "endDate": "2016-11-07T22:00:00.000Z",
-    "categoryName": "Training",
+    "categoryName": "DC Blue Devils vs",
     "speakers": "",
     "speakerNames": false
   },
@@ -175,7 +175,7 @@
     "order_index": 9,
     "startDate": "2016-11-07T18:00:00.000Z",
     "endDate": "2016-11-07T22:00:00.000Z",
-    "categoryName": "Session",
+    "categoryName": "DC Blue Devils vs",
     "speakers": "",
     "speakerNames": "Joshua Fuller"
   },
@@ -195,7 +195,7 @@
     "order_index": 10,
     "startDate": "2016-11-07T23:00:00.000Z",
     "endDate": "2016-11-08T02:00:00.000Z",
-    "categoryName": "Activity",
+    "categoryName": "Practice",
     "speakers": "",
     "speakerNames": false
   },
