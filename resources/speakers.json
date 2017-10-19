@@ -6,7 +6,7 @@
     "title": "Head Coach",
     "company": "DC Blue Devils",
     "bio": "Coach Samuels is a father of 7, and is actively engaged in the community with assisting youths in their basketball endeavors.",
-    "sessions" : ["57b78648a1663"]
+    "sessions" : ""
   },
   {
     "id": 195,
@@ -19,12 +19,12 @@
   },
   {
     "id": 259,
-    "avatar_url": "resources/avatars/03.jpg",
+    "avatar_url": "resources/avatars/",
     "name": "Shanda Samuels",
     "title": "Team Manager",
     "company": "DC Blue Devils",
     "bio": "Shanda Samuels is a public servant in the community. She's a 5th grade teacher at PGCPS, and is also a mother of 7. She's a tremendous asset to the DC Blue Devils Family.",
-    "sessions": ["57ee3b239aa2d"]
+    "sessions": ""
   },
   {
     "id": 258,
@@ -33,16 +33,16 @@
     "title": "Point Guard",
     "company": "DC Blue Devils",
     "bio": "Ben plays travel basketball and soccer. He aspires to be like his great grandfather who was college player of the year and played in the NBA for many years.",
-    "sessions": ["57ee3b239aa2d"]
+    "sessions": ""
   },
   {
     "id": 256,
-    "avatar_url": "resources/avatars/05.jpg",
-    "name": "Donald Rodriguez",
-    "title": "Support Engineer",
-    "company": "Saucy",
-    "bio": "Donald is a member of the engineering team and enjoys interacting with the Saucy community. He has development experience in JavaScript, Java, and C++.",
-    "sessions": ["57c49562bd1ba"]
+    "avatar_url": "resources/avatars/jacobRandall.PNG",
+    "name": "Jacob Randall",
+    "title": "Shooting Guard",
+    "company": "DC Blue Devils",
+    "bio": "Jacob has been playing basketball since he was 4. Although Jacob is only 10 years old, he's in the 6th grade.",
+    "sessions": ""
   },
   {
     "id": 226,

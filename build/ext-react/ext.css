@@ -52,7 +52,7 @@ hr {
 .app-banner {
     background-color: #025b80;
     background-color: var(--base-color);
-    background-image: url("../resources/hero-desktop.svg");
+    background-image: url("../resources/CoverPhoto.PNG");
     background-size: cover;
     background-position: center;
     color: white;
@@ -65,7 +65,7 @@ hr {
 @media screen and (max-width: 480px) {
     /* C:/Users/ezhar/gw/Sportify5/ext-react/packages/theme-conference-app/sass/etc/all.scss:60 */
     .app-banner {
-        background-image: url("../resources/hero.svg");
+        background-image: url("../resources/CoverPhoto.PNG");
         font-size: 30px;
     }
 }
