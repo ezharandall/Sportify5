@@ -52,11 +52,11 @@ hr {
 .app-banner {
     background-color: #025b80;
     background-color: var(--base-color);
-    background-image: url("../resources/CoverPhoto.PNG");
+    background-image: url("../resources/CoverPhoto.png");
     background-size: cover;
     background-position: center;
-    color: white;
-    font-size: 40px;
+    color: red;
+    font-size: 80px;
     padding: 40px 0;
     text-align: center;
     font-weight: 100;
@@ -65,7 +65,7 @@ hr {
 @media screen and (max-width: 480px) {
     /* C:/Users/ezhar/gw/Sportify5/ext-react/packages/theme-conference-app/sass/etc/all.scss:60 */
     .app-banner {
-        background-image: url("../resources/CoverPhoto.PNG");
+        background-image: url("../resources/CoverPhoto.png");
         font-size: 30px;
     }
 }
