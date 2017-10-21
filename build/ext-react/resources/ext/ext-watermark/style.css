@@ -1,4 +1,4 @@
-/*@font-face {
+@font-face {
 	font-family: 'ext-watermark';
 	src:url('fonts/ext-watermark.eot?n6lnws');
 	src:url('fonts/ext-watermark.eot?#iefixn6lnws') format('embedded-opentype'),
@@ -19,11 +19,11 @@
 	line-height: 1;
 
 	/* Better Font Rendering =========== */
-	/*-webkit-font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
-*//*
-/*.icon-extjs-beta-left:before {
+
+.icon-extjs-beta-left:before {
 	content: "\61";
 }
 
@@ -70,4 +70,4 @@
 .icon-sencha-extjs-trial-right-3:before {
 	content: "\6c";
 }
-*/
+
