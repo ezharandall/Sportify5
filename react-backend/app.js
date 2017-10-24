@@ -10,7 +10,17 @@ var index = require('./routes/index');
 var users = require('./routes/users');
 var player = require('./routes/player');
 
+var db = require("./models");
+
 var app = express();
+
+var PORT = process.env.PORT || 8085;
+
+// Cross-Origin Resource Sharing (CORS) enables open access
+// across domain-boundaries.
+// If you serve public content,
+//please consider using CORS to open it up
+//for universal JavaScript/browser access.
 app.use(cors())
 
 
@@ -42,6 +52,15 @@ app.use(function(err, req, res, next) {
   // render the error page
   res.status(err.status || 500);
   res.json('error');
+});
+
+
+// Syncing our sequelize models and then starting our Express app
+// =============================================================
+db.sequelize.sync({ force: true }).then(function() {
+  app.listen(PORT, function() {
+    console.log("App listening on PORT " + PORT);
+  });
 });
 
 module.exports = app;
