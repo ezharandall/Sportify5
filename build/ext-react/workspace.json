@@ -3,7 +3,7 @@
         "ext": "..\\..\\node_modules\\@extjs\\ext-react"
     },
     "packages": {
-        "dir": "${workspace.dir}/packages/local,${workspace.dir}/packages,C:\\Users\\ezhar\\gw\\Sportify5\\node_modules\\@extjs,ext-react\\packages",
+        "dir": "${workspace.dir}/packages/local,${workspace.dir}/packages,C:\\Users\\j_a_k\\git\\Sportify5\\node_modules\\@extjs,ext-react\\packages",
         "extract": "${workspace.dir}/packages/remote"
     }
 }
