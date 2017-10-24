@@ -9,7 +9,7 @@
 
 ### Links:
  * [GitHub Repository](https://github.com/ezharandall/Sportify5)
- * [Heroku](https://fierce-reef-37071.herokuapp.com/??????)
+ * [Heroku](https://sportifyteam.herokuapp.com/)
 
 
 ### Project Description:
