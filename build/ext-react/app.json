@@ -16,8 +16,8 @@
     ],
     "packages": {
         "dir": [
-            "C:\\Users\\ezhar\\gw\\Sportify5\\node_modules\\@extjs",
-            "C:\\Users\\ezhar\\gw\\Sportify5\\ext-react\\packages"
+            "/Users/mmchast2/Sportify5/node_modules/@extjs",
+            "/Users/mmchast2/Sportify5/ext-react/packages"
         ]
     },
     "output": {

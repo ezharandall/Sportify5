@@ -1,82 +1,62 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { setTitle } from '../actions';
-import { Panel } from '@extjs/ext-react';
-import WorldMap from './WorldMap';
+// import React from 'react';
+// import PaypalExpressBtn from 'react-paypal-express-checkout';
 
-class Attendees extends Component {
+// export default class MyApp extends React.Component {
+//     render() {
+//         const client = {
+//             sandbox:    'AbPf4o1hOfIQc_0H4PTTLylOX13g6ccI8i7bVV0cssdVrfbbz5fZblOYRtEf5Z4j354eUPfu1HWk77L8'
 
-    store = Ext.create('Ext.data.Store', {
-        autoLoad: true,
-        fields: [{ name: 'cnt', type: 'number'}, 'Work_Country'],
-        proxy: {
-            type: 'ajax',
-            url: 'resources/countries.json',
-            reader: {
-                type: 'json',
-                rootProperty: 'data'
-            }
-        },
-        listeners: {
-            load: () => this.setState({ loaded: true })
+            
+//         }   
+//         return (
+//             <PaypalExpressBtn client={client} currency={'USD'} total={1.00} />
+//         );
+//     }
+// } 
+
+import React from 'react';
+import PaypalExpressBtn from 'react-paypal-express-checkout';
+
+export default class MyApp extends React.Component {
+    render() {      
+        const onSuccess = (payment) => {
+            // Congratulation, it came here means everything's fine!
+                    console.log("The payment was succeeded!", payment);
+                    // You can bind the "payment" object's value to your state or props or whatever here, please see below for sample returned data
+        }       
+        
+        const onCancel = (data) => {
+            // User pressed "cancel" or close Paypal's popup!
+            console.log('The payment was cancelled!', data);
+            // You can bind the "data" object's value to your state or props or whatever here, please see below for sample returned data
+        }   
+        
+        const onError = (err) => {
+            // The main Paypal's script cannot be loaded or somethings block the loading of that script!
+            console.log("Error!", err);
+            // Because the Paypal's main script is loaded asynchronously from "https://www.paypalobjects.com/api/checkout.js"
+            // => sometimes it may take about 0.5 second for everything to get set, or for the button to appear         
+        }           
+            
+        let env = 'sandbox'; // you can set here to 'production' for production
+        let currency = 'USD'; // or you can set this value from your props or state  
+        let total = 1; // same as above, this is the total amount (based on currency) to be paid by using Paypal express checkout
+        // Document on Paypal's currency code: https://developer.paypal.com/docs/classic/api/currency_codes/
+        
+        const client = {
+            sandbox:    'AbPf4o1hOfIQc_0H4PTTLylOX13g6ccI8i7bVV0cssdVrfbbz5fZblOYRtEf5Z4j354eUPfu1HWk77L8',
+            
+            
         }
-    })
-
-    componentDidMount() {
-        this.props.dispatch(setTitle('Attendees'));
-    }
-
-    onSceneSetup = (svg, scene) => {
-        if(svg.panZoom) {
-            svg.panZoom.scale(0.6, 0.8);
-        }
-    }
-
-    render() {
+        // In order to get production's app-ID, you will have to send your app to Paypal for approval first
+        // For sandbox app-ID (after logging into your developer account, please locate the "REST API apps" section, click "Create App"): 
+        //   => https://developer.paypal.com/docs/classic/lifecycle/sb_credentials/
+        // For production app-ID:
+        //   => https://developer.paypal.com/docs/classic/lifecycle/goingLive/      
+        
+        // NB. You can also have many Paypal express checkout buttons on page, just pass in the correct amount and they will work!        
         return (
-            <WorldMap
-                store={this.store}
-                colorAxis={{
-                    scale: {
-                        type: 'log',
-                        range: ['#99ccff', '#0050a1']
-                    },
-                    field: 'cnt'
-                }}
-                mapAxis={{
-                    field: 'Work_Country',
-                    hidden: !Ext.platformTags.phone
-                }}
-                interactions={Ext.platformTags.phone ? {
-                    type: 'panzoom',
-                    zoom: {
-                        extent: [0.3, 3],
-                        doubleTap: false
-                    },
-                    pan: {
-                        constrain: false
-                    }
-                } : null}
-                legend={{
-                    docked: 'right',
-                    items: {
-                        count: 5,
-                        slice: [1],
-                        reverse: true,
-                        size: {
-                            x: 40,
-                            y: 20
-                        }
-                    }
-                }}
-                onScenesetup={this.onSceneSetup}
-            />
-        )
+            <PaypalExpressBtn env={env} client={client} currency={currency} total={total} onError={onError} onSuccess={onSuccess} onCancel={onCancel} />
+        );
     }
 }
-
-const mapStateToProps = (state) => {
-    return { };
-}
-
-export default connect(mapStateToProps)(Attendees);
