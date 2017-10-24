@@ -527,6 +527,6 @@ Ext.create({"xtype":"panel"});
 Ext.create('Ext.data.Store', {
   proxy: {
     type: 'ajax',
-    url: 'resources/speakers.json'
+    url: 'http://localhost:3005/player'
   }
 })
