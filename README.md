@@ -38,7 +38,7 @@ $ cd react-backend
 $ npm install   # or yarn
 
 Start up the app by running this:
-$ npm start
+$ PORT=3005 npm start
 
 
 
