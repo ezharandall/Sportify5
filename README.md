@@ -1,3 +1,21 @@
+# Sportify
+
+### Team Members:
+* Ezha Randall
+* Vanessa Blue
+* Morgan
+* Jonathan Ansley
+
+
+### Links:
+ * [GitHub Repository](https://github.com/ezharandall/Sportify5)
+ * [Heroku](https://fierce-reef-37071.herokuapp.com/??????)
+
+
+### Project Description:
+Sports team tracking
+
+
 
 # ExtReact Conference App
 
@@ -39,6 +57,3 @@ $ npm install   # or yarn
 
 Start up the app by running this:
 $ PORT=3005 npm start
-
-
-
