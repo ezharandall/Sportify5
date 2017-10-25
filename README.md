@@ -1,3 +1,20 @@
+# Sportify
+
+### Team Members:
+* Ezha Randall
+* Vanessa Blue
+* Morgan Chastain
+* Jonathan Ansley
+
+
+### Links:
+ * [GitHub Repository](https://github.com/ezharandall/Sportify5)
+ * [Heroku](https://sportifyteam.herokuapp.com/)
+
+
+### Project Description:
+Sportify’s sports team management app saves coaches and managers tons of time organizing their teams and groups. The powerful tools in our team management software simplify every aspect of team organization and communication. Functionality includes roster management, communication of news and schedules, photo sharing, and fees collection.  Spend less time organizing and more time coaching!
+
 
 # ExtReact Conference App
 
@@ -38,7 +55,4 @@ $ cd react-backend
 $ npm install   # or yarn
 
 Start up the app by running this:
-$ PORT=3005 node bin/www
-
-
-
+$ PORT=3005 npm start

@@ -1,9 +1,0 @@
-{
-    "frameworks": {
-        "ext": "../../node_modules/@extjs/ext-react"
-    },
-    "packages": {
-        "dir": "${workspace.dir}/packages/local,${workspace.dir}/packages,/Users/mmchast2/Sportify5/node_modules/@extjs,ext-react/packages",
-        "extract": "${workspace.dir}/packages/remote"
-    }
-}
