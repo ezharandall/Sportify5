@@ -61,18 +61,18 @@
 //     }
 // }
 
-import PayPalButton from 'react-paypal-button'
+// import PayPalButton from 'react-paypal-button'
 
-export default class App extends Component {
-  render(){
-    return (
-      <PayPalButton>
-        env='sandbox'
-        sandboxID='AbPf4o1hOfIQc_0H4PTTLylOX13g6ccI8i7bVV0cssdVrfbbz5fZblOYRtEf5Z4j354eUPfu1HWk77L8'
-        amount='0.01'
-        currency='USD'
-        commit={true}
-      />
-    )
-  }
-}
+// export default class App extends Component {
+//   render(){
+//     return (
+//       <PayPalButton>
+//         env='sandbox'
+//         sandboxID='AbPf4o1hOfIQc_0H4PTTLylOX13g6ccI8i7bVV0cssdVrfbbz5fZblOYRtEf5Z4j354eUPfu1HWk77L8'
+//         amount='0.01'
+//         currency='USD'
+//         commit={true}
+//       />
+//     )
+//   }
+// }

@@ -56,3 +56,6 @@ $ npm install   # or yarn
 
 Start up the app by running this:
 $ PORT=3005 npm start
+
+NPM Install for the login component:
+$ npm install react-signup-login-component
