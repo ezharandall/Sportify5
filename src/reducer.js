@@ -13,7 +13,7 @@ const navStore = Ext.create('Ext.data.TreeStore', {
             { text: 'Roster', id: '/speakers', iconCls: 'x-font-icon md-icon-mic', leaf: true },
             { text: 'Calendar', id: '/calendar', iconCls: 'x-font-icon md-icon-event-available', leaf: true },
             { text: 'Payments', id: '/attendees', iconCls: 'x-font-icon md-icon-people', leaf: true },
-            { text: 'About this App', id: '/about', iconCls: 'x-font-icon md-icon-info-outline', leaf: true }
+            { text: 'Sign Up/Login', id: '/login', iconCls: 'x-font-icon md-icon-info-outline', leaf: true }
         ]
     }
 })

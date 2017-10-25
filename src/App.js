@@ -10,7 +10,7 @@ import Schedule from './schedule/Schedule';
 import Speakers from './speakers/Speakers';
 import Calendar from './calendar/Calendar';
 import Attendees from './attendees/Attendees';
-import About from './about/About';
+import Login from './login/Login'
 
 export default function App() {
     return (
@@ -23,7 +23,7 @@ export default function App() {
                         <Route path="/speakers/:id?" component={Speakers}/>
                         <Route path="/calendar/:id?" component={Calendar}/>
                         <Route path="/attendees" component={Attendees}/>
-                        <Route path="/about" component={About}/>
+                        <Route path="/login" component={Login}/>
                     </Switch>
                 </Layout>
             </ConnectedRouter>

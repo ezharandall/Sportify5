@@ -220,6 +220,106 @@ Ext.create('Ext.data.TreeStore', {
     }]
   }
 });
+Ext.create('Ext.data.TreeStore', {
+  root: {
+    children: [{
+      text: 'Schedule',
+      id: '/schedule',
+      iconCls: 'x-font-icon md-icon-schedule',
+      leaf: true
+    }, {
+      text: 'Roster',
+      id: '/speakers',
+      iconCls: 'x-font-icon md-icon-mic',
+      leaf: true
+    }, {
+      text: 'Calendar',
+      id: '/calendar',
+      iconCls: 'x-font-icon md-icon-event-available',
+      leaf: true
+    }, {
+      text: 'Payments',
+      id: '/attendees',
+      iconCls: 'x-font-icon md-icon-people',
+      leaf: true
+    }, {
+      text: 'About this App',
+      id: '/about',
+      iconCls: 'x-font-icon md-icon-info-outline',
+      leaf: true
+    }, {
+      text: 'Sign Up/Login',
+      id: '/login',
+      iconCls: 'x-font-icon md-icon-info-outline',
+      leaf: true
+    }]
+  }
+});
+Ext.create('Ext.data.TreeStore', {
+  root: {
+    children: [{
+      text: 'Schedule',
+      id: '/schedule',
+      iconCls: 'x-font-icon md-icon-schedule',
+      leaf: true
+    }, {
+      text: 'Roster',
+      id: '/speakers',
+      iconCls: 'x-font-icon md-icon-mic',
+      leaf: true
+    }, {
+      text: 'Calendar',
+      id: '/calendar',
+      iconCls: 'x-font-icon md-icon-event-available',
+      leaf: true
+    }, {
+      text: 'Payments',
+      id: '/attendees',
+      iconCls: 'x-font-icon md-icon-people',
+      leaf: true
+    }, {
+      text: 'About this App',
+      id: '/about',
+      iconCls: 'x-font-icon md-icon-info-outline',
+      leaf: true
+    }, {
+      text: 'Sign Up/Login',
+      id: '/login',
+      iconCls: 'x-font-icon md-icon-info-outline',
+      leaf: true
+    }]
+  }
+});
+Ext.create('Ext.data.TreeStore', {
+  root: {
+    children: [{
+      text: 'Schedule',
+      id: '/schedule',
+      iconCls: 'x-font-icon md-icon-schedule',
+      leaf: true
+    }, {
+      text: 'Roster',
+      id: '/speakers',
+      iconCls: 'x-font-icon md-icon-mic',
+      leaf: true
+    }, {
+      text: 'Calendar',
+      id: '/calendar',
+      iconCls: 'x-font-icon md-icon-event-available',
+      leaf: true
+    }, {
+      text: 'Payments',
+      id: '/attendees',
+      iconCls: 'x-font-icon md-icon-people',
+      leaf: true
+    }, {
+      text: 'Sign Up/Login',
+      id: '/login',
+      iconCls: 'x-font-icon md-icon-info-outline',
+      leaf: true
+    }]
+  }
+});
 Ext.create('Ext.data.ChainedStore');
 Ext.create('Ext.data.ChainedStore', _extends({}, _this.storeDefaults, {
   filters: [{
