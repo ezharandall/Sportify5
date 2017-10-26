@@ -9,11 +9,14 @@
     "build": "npm run clean && cross-env NODE_ENV=production webpack --env.prod=true --progress --colors",
     "prod": "cd build && static-server --port 8085",
     "build:sdk": "touch build/extjs/app.json"
-  },
+      },      
   "proxy": "http://localhost:3005",
   "repository": {
     "type": "git",
     "url": "https://github.com/ezharandall/Sportify5"
+  },
+  "engines": {
+    "node": "6.10.2"
   },
   "author": "Ezha Randall, Jonathan Ansley, Morgan Chastain",
   "license": "ISC",
@@ -64,14 +67,7 @@
     "style-loader": "^0.13.1",
     "webpack": "^2.5.1",
     "webpack-dev-server": "^2.4.5"
-  },
-  "node info": {
-  "name": "Sportify5",
-  "description": "Sports Management Tool",
-  "version": "1.0.0",
-  "engines": {
-    "node": "6.10.2"
   }
-}
+  
 }
 
