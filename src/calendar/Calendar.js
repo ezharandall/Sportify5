@@ -1,98 +1,41 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
+import { render } from 'react-dom'
+import moment from 'moment'
 
-import { Calendar_Days, Container, Panel } from '@extjs/ext-react';
-import Event from '../event/Event';
-import { loadEvent } from '../event/actions';
+import BigCalendar from 'react-big-calendar'
+// a localizer for BigCalendar
+BigCalendar.momentLocalizer(moment)
+
+import { getEvents } from './gcal'
+
+// this weird syntax is just a shorthand way of specifying loaders
+require('!style-loader!css-loader!react-big-calendar/lib/css/react-big-calendar.css')
 
 class Calendar extends Component {
-
-    constructor({ children }) {
-        super();
-        this.state = { children };
-
-        // Lookup favorites and filter event store by them.
-        const favs = localStorage.getItem('favoriteEvents');
-        this.favorites = favs ? JSON.parse(favs) : [];
+constructor () {
+    super()
+    this.state = {
+      events: []
     }
-
-    componentDidMount = () => this.updateData();
-    componentDidUpdate = (prevProps) => this.updateData(prevProps);
-
-    updateData = (prevProps) => {
-        const id = this.props.match.params.id;
-        
-        if (!prevProps || prevProps.match.params.id !== id) {
-            this.props.dispatch(loadEvent(id, 'Calendar', '/calendar'))
-        }
-    }
-
-    store = Ext.create('Ext.calendar.store.Calendars', {
-        eventStoreDefaults: {
-            proxy: {
-                type: 'ajax',
-                url: 'resources/schedule.json'
-            },
-            filters: item => this.favorites.indexOf(item.get('id')) >= 0
-        },
-        data: [{
-            id: 1,
-            name: 'myCal'
-        }]
+  }
+  componentDidMount () {
+    getEvents((events) => {
+      this.setState({events})
     })
-
-    eventTap = (cal, ctx) => {
-        const eventId = ctx.event && ctx.event.getId();
-        if(eventId) location.hash = `/calendar/${eventId}`;
-    }
-
-    render() {
-        const { event, match } = this.props;
-        const showEvent = match.params.id && (Ext.os.is.Phone || event);
-
-        return (
-            <Container 
-                activeItem={match.params.id && event ? 1 : 0}
-                platformConfig={{
-                    "!phone": {
-                        layout: 'hbox'
-                    },
-                    "phone": {
-                        layout: { 
-                            type: 'card', 
-                            animation: 'slide' 
-                        }
-                    }
-                }}
-            >
-                <Calendar_Days
-                    visibleDays={7}
-                    startTime={7}
-                    endTime={22}
-                    value={new Date(2017, 10, 16)}
-                    store={this.store}
-                    dayHeader={{
-                        format: 'D',
-                        compactOptions: {
-                            format: 'D'
-                        }
-                    }}
-                    editForm={null}
-                    draggable={false}
-                    resizeEvents={false}
-                    gestureNavigation={false}
-                    allowSelection={false}
-                    onEventTap={this.eventTap}
-                    flex={1}
-                />
-                { (Ext.os.is.Phone || showEvent) && <Event event={event} flex={1} header={false}/> }
-            </Container>
-        )
-    }
+  }
+  render () {
+    return (
+      // React Components in JSX look like HTML tags
+      <BigCalendar
+        style={{height: '420px'}}
+        events={this.state.events}
+      />
+    )
+  }
 }
+export default Calendar
 
-const mapStateToProps = ({ event }) => {
-    return { event: (event || {}).record };
-}
 
-export default connect(mapStateToProps)(Calendar);
+
+
+    

@@ -1,7 +1,7 @@
 {
-  "name": "@extjs/reactor-conference-app",
+  "name": "Sportify5",
   "version": "1.1.1",
-  "description": "A full example app using ExtReact and Redux.",
+  "description": "A Sports Management Tool",
   "main": "index.js",
   "scripts": {
     "clean": "rimraf build",
@@ -9,37 +9,47 @@
     "build": "npm run clean && cross-env NODE_ENV=production webpack --env.prod=true --progress --colors",
     "prod": "cd build && static-server --port 8085",
     "build:sdk": "touch build/extjs/app.json"
+<<<<<<< HEAD
   },
+=======
+      },      
+>>>>>>> 3edb6100878065bc8f630b7f7a89609f48266ec8
   "proxy": "http://localhost:3005",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sencha/extjs-reactor.git"
+    "url": "https://github.com/ezharandall/Sportify5"
   },
-  "author": "Sencha, Inc.",
-  "license": "MIT",
+  "engines": {
+    "node": "^6.10.2"
+  },
+  "author": "Ezha Randall, Jonathan Ansley, Morgan Chastain",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sencha/extjs-reactor/issues"
+    "url": "https://github.com/ezharandall/Sportify5"
   },
   "homepage": "https://github.com/sencha/extjs-reactor#readme",
   "dependencies": {
     "@extjs/ext-react": "^6.5.1",
-    "@extjs/ext-react-calendar": "^6.5.1",
-    "@extjs/ext-react-d3": "^6.5.1",
+    "@extjs/ext-react-d3": "^6.5.1",   
     "@extjs/reactor": "^1.1.1",
     "babel-polyfill": "^6.23.0",
     "babel-runtime": "^6.23.0",
     "cors": "^2.8.4",
     "d3": "^4.5.0",
     "history": "^4.6.1",
+    "moment": "^2.19.1",
     "prop-types": "^15.5.8",
     "react": "^15.4.0",
-    "react-dom": "^15.4.0",
+    "react-big-calendar": "^0.16.1",
+    "react-dom": "^15.6.2",
     "react-paypal-express-checkout": "^1.0.3",
     "react-redux": "^5.0.4",
     "react-router-dom": "^4.1.1",
     "react-router-redux": "^5.0.0-alpha.6",
+    "react-signup-login-component": "^1.0.2",
     "redux": "^3.6.0",
     "redux-thunk": "^2.2.0",
+    "superagent": "^3.8.0",
     "topojson-client": "^3.0.0"
   },
   "devDependencies": {
@@ -62,4 +72,6 @@
     "webpack": "^2.5.1",
     "webpack-dev-server": "^2.4.5"
   }
+  
 }
+

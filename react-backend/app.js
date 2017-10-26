@@ -14,7 +14,8 @@ var db = require("./models");
 
 var app = express();
 
-var PORT = process.env.PORT || 8085;
+//This used to be 8085.
+var PORT = process.env.PORT || 3005;
 
 // Cross-Origin Resource Sharing (CORS) enables open access
 // across domain-boundaries.
@@ -58,9 +59,11 @@ app.use(function(err, req, res, next) {
 // Syncing our sequelize models and then starting our Express app
 // =============================================================
 db.sequelize.sync({ force: true }).then(function() {
-  app.listen(PORT, function() {
-    console.log("App listening on PORT " + PORT);
-  });
+  // app.listen(PORT, function() {
+    // console.log("App listening on PORT " + PORT);
+  // });
+
+  console.log("db sequelize - console log");
 });
 
 module.exports = app;

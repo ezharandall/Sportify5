@@ -2,11 +2,11 @@ module.exports = function(sequelize, DataTypes) {
 
   var Validation = sequelize.define("Validation", {
 
-  email:{
+  username:{
      type: DataTypes.STRING,
       allowNull: false,
       validate: {
-        len: [1, 60]
+        len: [1, 40]
       }
   }, // end of email
 
@@ -14,15 +14,15 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
-        len: [1, 60]
+        len: [1, 25]
       }
     }, // end of password
-
-    last_logon: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      len: [1]
-    }, // end of last_logon
+    //
+    // last_logon: {
+    //   type: DataTypes.STRING,
+    //   allowNull: false,
+    //   len: [1]
+    // }, // end of last_logon
 
   }, // end of columns
 
