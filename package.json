@@ -65,8 +65,8 @@
     "style-loader": "^0.13.1",
     "webpack": "^2.5.1",
     "webpack-dev-server": "^2.4.5"
-  }
-  {
+  },
+  "node info": {
   "name": "Sportify5",
   "description": "Sports Management Tool",
   "version": "1.0.0",
@@ -74,4 +74,4 @@
     "node": "6.10.2"
   }
 }
-}
+
