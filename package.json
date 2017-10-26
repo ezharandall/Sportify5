@@ -16,7 +16,7 @@
     "url": "https://github.com/ezharandall/Sportify5"
   },
   "engines": {
-    "node": "6.10.2"
+    "node": "^6.10.2"
   },
   "author": "Ezha Randall, Jonathan Ansley, Morgan Chastain",
   "license": "ISC",
