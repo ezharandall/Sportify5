@@ -1,18 +1,18 @@
-// import React from 'react';
-// import PaypalExpressBtn from 'react-paypal-express-checkout';
+import React from 'react';
+import PaypalExpressBtn from 'react-paypal-express-checkout';
 
-// export default class MyApp extends React.Component {
-//     render() {
-//         const client = {
-//             sandbox:    'AbPf4o1hOfIQc_0H4PTTLylOX13g6ccI8i7bVV0cssdVrfbbz5fZblOYRtEf5Z4j354eUPfu1HWk77L8'
+export default class MyApp extends React.Component {
+    render() {
+        const client = {
+            sandbox:    'AbPf4o1hOfIQc_0H4PTTLylOX13g6ccI8i7bVV0cssdVrfbbz5fZblOYRtEf5Z4j354eUPfu1HWk77L8'
 
             
-//         }   
-//         return (
-//             <PaypalExpressBtn client={client} currency={'USD'} total={1.00} />
-//         );
-//     }
-// } 
+        }   
+        return (
+            <PaypalExpressBtn client={client} currency={'USD'} total={1.00} />
+        );
+    }
+} 
 
 // import React from 'react';
 // import PaypalExpressBtn from 'react-paypal-express-checkout';
