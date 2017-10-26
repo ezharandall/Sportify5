@@ -1,5 +1,5 @@
 {
-  "name": "@extjs/reactor-conference-app",
+  "name": "Sportify5",
   "version": "1.1.1",
   "description": "A full example app using ExtReact and Redux.",
   "main": "index.js",
@@ -13,12 +13,12 @@
   "proxy": "http://localhost:3005",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sencha/extjs-reactor.git"
+    "url": "https://github.com/ezharandall/Sportify5"
   },
-  "author": "Sencha, Inc.",
-  "license": "MIT",
+  "author": "Ezha Randall, Jonathan Ansley, Morgan Chastain",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sencha/extjs-reactor/issues"
+    "url": "https://github.com/ezharandall/Sportify5"
   },
   "homepage": "https://github.com/sencha/extjs-reactor#readme",
   "dependencies": {
@@ -66,4 +66,12 @@
     "webpack": "^2.5.1",
     "webpack-dev-server": "^2.4.5"
   }
+  {
+  "name": "Sportify5",
+  "description": "Sports Management Tool",
+  "version": "1.0.0",
+  "engines": {
+    "node": "6.10.2"
+  }
+}
 }
