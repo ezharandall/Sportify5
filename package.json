@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "clean": "rimraf build",
-    "start": "yarn", 
+    "start": "webpack-dev-server --progress --colors", 
     "build": "npm run clean && cross-env NODE_ENV=production webpack --env.prod=true --progress --colors",
     "prod": "cd build && static-server --port 8085",
     "build:sdk": "touch build/extjs/app.json"
