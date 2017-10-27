@@ -18,7 +18,7 @@ const Login = (props) => {
         <div>
             <ReactSignupLoginComponent
                 title="Signup/ Login"
-                handleSignup={signupWasClickedCallback}
+                // handleSignup={signupWasClickedCallback}
                 handleLogin={loginWasClickedCallback}
                 handleRecoverPassword={recoverPasswordWasClickedCallback}
             />
