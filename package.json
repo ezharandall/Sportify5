@@ -9,12 +9,10 @@
     "build": "npm run clean && cross-env NODE_ENV=production webpack --env.prod=true --progress --colors",
     "prod": "cd build && static-server --port 8085",
     "build:sdk": "touch build/extjs/app.json"
-<<<<<<< HEAD
-  },
-=======
-      },      
->>>>>>> 3edb6100878065bc8f630b7f7a89609f48266ec8
+  },    
+
   "proxy": "http://localhost:3005",
+ },
   "repository": {
     "type": "git",
     "url": "https://github.com/ezharandall/Sportify5"
