@@ -10,9 +10,10 @@
     "prod": "cd build && static-server --port 8085",
     "build:sdk": "touch build/extjs/app.json"
 
-  },      
+ },    
 
   "proxy": "http://localhost:3005",
+ },
   "repository": {
     "type": "git",
     "url": "https://github.com/ezharandall/Sportify5"
