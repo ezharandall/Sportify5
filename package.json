@@ -11,10 +11,6 @@
     "build:sdk": "touch build/extjs/app.json"
       },      
   "proxy": "http://localhost:3005",
-<<<<<<< HEAD
-=======
- 
->>>>>>> 252a536b3762f338ef9a77627f6e13d94eca9c6c
   "repository": {
     "type": "git",
     "url": "https://github.com/ezharandall/Sportify5"
