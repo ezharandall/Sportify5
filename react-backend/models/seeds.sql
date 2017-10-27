@@ -17,16 +17,16 @@ VALUES  (1, 'Harvey Smith', 12, 'point guard', '11'),
 --
 --
 INSERT INTO fees (id, monthly_fee, paid, PlayerID)
-VALUES  (1, 30, YES, 1),
-        (2, 30, NO, 2),
-        (3, 30, NO, 3),
-        (4, 30, YES, 4),
-        (5, 30, YES, 5),
-        (6, 30, NO, 6),
-        (7, 30, YES, 7),
-        (8, 30, YES, 8),
-        (9, 30, YES, 9),
-        (10, 30, YES, 10);
+VALUES  (1, 30, true, 1),
+        (2, 30, false, 2),
+        (3, 30, false, 3),
+        (4, 30, true, 4),
+        (5, 30, true, 5),
+        (6, 30, false, 6),
+        (7, 30, true, 7),
+        (8, 30, true, 8),
+        (9, 30, true, 9),
+        (10, 30, true, 10);
 --
 --
 --
@@ -44,9 +44,14 @@ VALUES  (1, 'Hillside Park', '133 Hillside Dr', 'Reston', 'VA', '98762', 'field 
 --
 --
 --
-INSERT INTO games (id, ....................VenueID)
-VALUES  (1, '2017-06-12', 'Customer prefers text messages.', 1,5),
-        (10, '2017-09-10', 'Lives near Springfield', 10,8);
+INSERT INTO validations (id, username, password)
+VALUES  (1, 'coach', 'coachpassword');
+--
+--
+--
+INSERT INTO games (id, date_time_of_game, final_score_our_team, final_score_their_team, VenueID)
+VALUES  (1, '2017-06-12 18:30:00', 66, 65, 3),
+        (10, '2017-09-10 19:00:00', 59, 60, 4);
 --
 --
 --
